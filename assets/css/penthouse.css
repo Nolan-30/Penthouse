@@ -1,0 +1,381 @@
+/*                 Importation des polices          */
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+  scroll-behavior: smooth;
+}
+
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+
+  color: white;
+}
+
+body {
+  background-color: black;
+  color: white;
+  background: radial-gradient(
+    circle at center,
+    #2c2929 0%,
+    #000000 100%
+  ); /* permet de mettre un ptit dégradé a la page complete*/
+  margin: 0;
+}
+
+/* HEADER */
+header {
+  border-top: 1px solid rgba(41, 41, 41, 0.489);
+  display: flex;
+  justify-content: space-between; /* espace entre le titre et le menu */
+  align-items: center; /* centre verticalement */
+  background: linear-gradient(rgb(241, 184, 51), rgb(0, 0, 0));
+  padding: 10px 30px;
+}
+
+header img {
+  border-radius: 10px;
+}
+
+/* Liste de navigation à droite */
+ul {
+  list-style: none; /* enlève les puces */
+  display: flex;
+  gap: 50px; /* espace entre les éléments */
+  margin: 0;
+  padding: 0;
+}
+
+/* Liens du menu */
+li {
+  transition: color 1s;
+}
+
+header li:hover {
+  color: rgb(0, 0, 0);
+}
+
+header ul a li {
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+}
+
+.tour a:hover {
+  color: rgb(255, 0, 0);
+  transition: 1s;
+}
+
+/* Penthouse partie */
+
+.tour {
+  margin-top: 5%;
+  padding: 20px;
+  position: relative; /* permet de placer le texte par-dessus */
+}
+
+.tour li a {
+  text-decoration: none;
+  color: gold;
+}
+
+.tour li {
+  list-style: none;
+  margin-bottom: -1%;
+}
+
+.tour h2 {
+  color: gold;
+}
+
+.border-grey {
+  border-top: 1px solid rgba(132, 132, 132, 0.489);
+  border-bottom: 1px solid rgba(132, 132, 132, 0.489);
+}
+
+.border-grey-perso {
+  border-top: 1px solid rgba(132, 132, 132, 0.489);
+  border-bottom: 1px solid rgba(132, 132, 132, 0.489);
+}
+.penthouse-img {
+  text-align: center;
+  width: 100%;
+}
+
+.penthouse-img img {
+  border-radius: 10px;
+  border: 3px solid rgba(41, 41, 41, 0.489);
+  margin-bottom: 10%;
+}
+
+/* BOX RESUME */
+.resume {
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+.resume h2 {
+  color: gold;
+  margin-left: 8%;
+
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  font-style: italic;
+  text-decoration: underline;
+}
+.resume p {
+  margin-left: 8%;
+  min-width: 600px;
+  max-width: 600px;
+}
+
+.resume h3 {
+  margin-left: 8%;
+  color: gold;
+  /*  STYLE*/
+  font-style: italic;
+  font-family: "Lato", sans-serif;
+  font-weight: 300; /* Poids léger pour l'élégance */
+}
+
+.resume a {
+  color: gold;
+  text-decoration: none;
+}
+
+.resume a:hover {
+  color: rgb(255, 255, 255);
+  transition: 1s;
+}
+
+/* placement de l'image */
+.img-seol-a {
+  margin-left: 60%;
+  margin-top: -170px;
+}
+
+.img-seol-a img {
+  border-radius: 10px;
+  border: 3px solid rgba(41, 41, 41, 0.489);
+}
+/*                      */
+/* box des personnages*/
+/*                  */
+
+.perso h2 {
+  margin-left: 8%;
+  color: gold;
+  font-size: 30px;
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  font-style: oblique;
+  text-decoration: underline; /* permet de souligné du texte*/
+}
+
+.personnages-container {
+  display: flex; /* Active Flexbox */
+  justify-content: center; /* Commence l'alignement à gauche */
+
+  gap: 110px;
+  margin-top: 1%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+}
+
+.perso-container-bas {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.personnage-carte {
+  display: flex;
+  flex-direction: column; /* Empile le nom et l'image verticalement */
+  align-items: center; /* Centre les éléments horizontalement */
+}
+
+.nom-perso {
+  color: rgb(255, 255, 255); /* Couleur d'or pour le nom */
+  font-family: "Playfair Display", serif;
+  font-weight: 700; /* Poids gras pour les titres */
+  font-style: italic;
+  font-size: 20px;
+  margin: 10px 0 5px 0; /* Marge au-dessus et en dessous (plus petit en bas) */
+  text-align: center;
+}
+
+.nom-perso a {
+  text-decoration: none;
+  color: white;
+}
+
+.nom-perso a:hover {
+  color: gold;
+  transition: 1s;
+}
+
+/* qd je passe sur le prenom des prsng et leur description ca passe en jaune */
+.personnage-carte p:hover {
+  color: gold;
+  transition: 1s;
+}
+
+.personnage-carte img {
+  border: 3px solid rgba(41, 41, 41, 0.489);
+  border-radius: 16px;
+  border-bottom: 10px solid rgba(41, 41, 41, 0.489);
+}
+
+.degrader-gold {
+  background: linear-gradient(to right, gold, #7d6f00);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.degrader-blanc {
+  background: linear-gradient(to right, #ffffff, #5b5b5b);
+
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.degrader-blanc-footer {
+  background: linear-gradient(to right, #ffffff, #8d8d8d);
+
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.description-perso {
+  display: flex;
+
+  gap: 130px;
+}
+.description-perso p {
+  /* couleur */
+  border: 3px solid rgba(41, 41, 41, 0.489);
+  border-radius: 10px;
+  border-top: 0;
+  margin: 0;
+  margin-bottom: 15%; /* laisse de l'espace pour mettre la border qui delimite les grande parties*/
+
+  color: rgb(255, 255, 255);
+
+  /* pr centrer le txt et qu'il prenne tt la place de la box */
+  display: flex;
+  text-align: center;
+  align-items: center;
+
+  /* alignement du txt */
+  min-width: 230px;
+  max-width: 230px;
+  min-height: 100px;
+  max-height: 100px;
+}
+
+/* Info sur Min Seol-a */
+/* Permet de mettre du texte en dégradé gold */
+
+.min_seol-a-perso img {
+  border: 3px solid transparent;
+}
+
+.min_seol-a-perso p {
+  border: 3px solid transparent;
+  border-image: linear-gradient(45deg, gold, #ffd700, #b8860b) 1;
+
+  /* alignement du txt */
+
+  min-width: 330px;
+  max-width: 330px;
+  min-height: 100px;
+  max-height: 100px;
+
+  /* Centrage du texte à l'intérieur du bloc */
+  display: flex;
+  text-align: center;
+  align-items: center;
+
+  color: white;
+}
+
+.seol-a-nom a:hover,
+.min_seol-a-perso p:hover {
+  color: gold;
+  transition: 1s;
+}
+
+.seol-a-container {
+  display: flex;
+  justify-content: center;
+}
+.seol-a-carte {
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+}
+.seol-a-nom a {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 2%;
+  font-style: oblique;
+  font-size: 30px;
+}
+
+/* membres cles */
+
+.membres-cles {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+.membres-cles p {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700; /* Poids gras pour les titres */
+}
+
+.oblic {
+  font-style: oblique;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Box saisons 
+
+.saisons-container {
+  display: flex;
+  margin-left: 8%;
+}
+  */
+
+/* FOOTER */
+footer {
+  padding: 10px;
+  margin-top: 5%;
+  background: linear-gradient(rgb(0, 0, 0), rgb(241, 184, 51));
+}
+
+.fin-page h4 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  font-size: 30px;
+
+  font-family: "Cinzel", serif;
+  line-height: 1.2; /* ou 1.3 */
+}

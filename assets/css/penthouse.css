@@ -4,8 +4,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
-
 * {
   scroll-behavior: smooth;
 }
@@ -184,6 +182,17 @@ header ul a li {
   margin-top: 1%;
   border-radius: 10px;
   margin-bottom: 5%;
+}
+/* ajt d'effet de zoom qd je passe sur une image */
+.personnage-carte img {
+  transition: transform 1s ease-out;
+}
+
+.personnage-carte:hover img {
+  /* Petit zoom */
+  transform: scale(1.03);
+  /* petit effet doré sur les bordures qd on passe dessus*/
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
 }
 
 .perso-container-bas {

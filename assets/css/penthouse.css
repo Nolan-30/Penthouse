@@ -109,6 +109,15 @@ header ul a li {
   border-radius: 10px;
   border: 3px solid rgba(41, 41, 41, 0.489);
   margin-bottom: 10%;
+
+  transition: transform 3s ease-out;
+}
+
+.penthouse-img:hover img {
+  /* Petit zoom */
+  transform: scale(1.05);
+  /* petit effet doré sur les bordures qd on passe dessus*/
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
 }
 
 /* BOX RESUME */
@@ -159,6 +168,21 @@ header ul a li {
 .img-seol-a img {
   border-radius: 10px;
   border: 3px solid rgba(41, 41, 41, 0.489);
+}
+
+.img-seol-a img {
+  border-radius: 10px;
+  border: 3px solid rgba(41, 41, 41, 0.489);
+  margin-bottom: 10%;
+
+  transition: transform 3s ease-out;
+}
+
+.img-seol-a:hover img {
+  /* Petit zoom */
+  transform: scale(1.05);
+  /* petit effet doré sur les bordures qd on passe dessus*/
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
 }
 /*                      */
 /* box des personnages*/
@@ -215,6 +239,8 @@ header ul a li {
   font-size: 20px;
   margin: 10px 0 5px 0; /* Marge au-dessus et en dessous (plus petit en bas) */
   text-align: center;
+
+  margin-bottom: 20px;
 }
 
 .nom-perso a {

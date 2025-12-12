@@ -123,16 +123,14 @@ header ul a li {
 /* BOX RESUME */
 .resume {
   margin-top: 5%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 .resume h2 {
-  color: gold;
   margin-left: 8%;
-
+  font-size: 40px;
   font-family: "Cinzel", serif;
   font-weight: 700;
   font-style: italic;
-  text-decoration: underline;
 }
 .resume p {
   margin-left: 8%;
@@ -146,7 +144,7 @@ header ul a li {
   /*  STYLE*/
   font-style: italic;
   font-family: "Lato", sans-serif;
-  font-weight: 300; /* Poids léger pour l'élégance */
+  font-weight: 700; /* Poids léger pour l'élégance */
 }
 
 .resume a {
@@ -193,11 +191,10 @@ header ul a li {
   margin-bottom: 5%;
   margin-top: 5%;
   color: gold;
-  font-size: 30px;
+  font-size: 40px;
   font-family: "Cinzel", serif;
   font-weight: 700;
   font-style: oblique;
-  text-decoration: underline; /* permet de souligné du texte*/
 }
 
 .personnages-container {
@@ -234,12 +231,12 @@ header ul a li {
 }
 
 .nom-perso {
-  color: rgb(255, 255, 255); /* Couleur d'or pour le nom */
+  color: rgb(255, 255, 255);
   font-family: "Playfair Display", serif;
-  font-weight: 700; /* Poids gras pour les titres */
+  font-weight: 700;
   font-style: italic;
   font-size: 20px;
-  margin: 10px 0 5px 0; /* Marge au-dessus et en dessous (plus petit en bas) */
+  margin: 10px 0 5px 0;
   text-align: center;
 
   margin-bottom: 20px;
@@ -247,7 +244,6 @@ header ul a li {
 
 .nom-perso a {
   text-decoration: none;
-  color: white;
 }
 
 .nom-perso a:hover {
@@ -395,6 +391,9 @@ header ul a li {
 }
 
 /* Box saisons  */
+
+/* Ajt une border a gauche pour chaque saison en doré et le reste est arrondi
+utiliser le code de la page titans pour s'aider */
 .saisons h2 {
   text-align: center;
   margin-bottom: 5%;

@@ -60,11 +60,14 @@ header li:hover {
 }
 
 header ul a li {
-  font-family: "Cinzel", serif;
-  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  font-weight: 700; /* Poids léger pour l'élégance */
+  font-size: 20px;
 }
-
-.tour a:hover {
+.bg-penthouse {
+  background: linear-gradient(rgb(0, 0, 0), rgb(24, 24, 24));
+}
+.tour a h2:hover {
   color: rgb(255, 0, 0);
   transition: 1s;
 }
@@ -72,14 +75,21 @@ header ul a li {
 /* Penthouse partie */
 
 .tour {
-  margin-top: 5%;
   padding: 20px;
-  position: relative; /* permet de placer le texte par-dessus */
 }
 
-.tour li a {
+.tour a,
+h2 {
+  text-align: center;
+  font-style: italic;
+  font-family: "Lato", sans-serif;
+  font-weight: 700; /* Poids léger pour l'élégance */
+}
+
+.tour a h2 {
   text-decoration: none;
   color: gold;
+  margin-bottom: 2%;
 }
 
 .tour li {
@@ -101,7 +111,8 @@ header ul a li {
   border-bottom: 1px solid rgba(132, 132, 132, 0.489);
 }
 .penthouse-img {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   width: 100%;
 }
 
@@ -126,7 +137,7 @@ header ul a li {
   margin-bottom: 5%;
 }
 .resume h2 {
-  margin-left: 8%;
+  margin-left: -1290px;
   font-size: 40px;
   font-family: "Cinzel", serif;
   font-weight: 700;
@@ -194,7 +205,6 @@ header ul a li {
   font-size: 40px;
   font-family: "Cinzel", serif;
   font-weight: 700;
-  font-style: oblique;
 }
 
 .personnages-container {
@@ -509,10 +519,10 @@ li {
 
 /* FOOTER */
 footer {
-  border-top: 1px solid rgb(67, 67, 67);
   padding: 10px;
   margin-top: 5%;
   background: linear-gradient(rgb(0, 0, 0), rgb(241, 184, 51));
+  height: 170px;
 }
 
 .fin-page h4 {

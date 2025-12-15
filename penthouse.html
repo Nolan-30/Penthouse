@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- importation d'une biblio pr une transition qui s'applique sur tt la page -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/30bbba539a.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="assets/css/penthouse.css" />
     <title>Penthouse</title>
   </head>
@@ -21,23 +27,26 @@
       </ul>
     </header>
     <div class="border-grey">
-      <div class="tour" id="penthouse-scroll">
-        <li>
+      <div class="bg-penthouse" id="penthouse-scroll">
+        <div class="tour">
           <!-- target blank permet d'ouvrir un new onglet qd on click sur le lien -->
-          <a href="https://www.netflix.com/fr/title/81552562" target="_blank">
-            Découvrir le série sur Netflix</a
-          >
-        </li>
-        <h2>Le luxe cache le pire des secrets</h2>
-      </div>
+          <li>
+            <a href="https://www.netflix.com/fr/title/81552562" target="_blank">
+              <h2>Découvrir le série sur Netflix</h2></a
+            >
+          </li>
 
-      <div class="penthouse-img">
-        <img src="assets/Images/penthouse.png" />
+          <h2>Le luxe cache le pire des secrets</h2>
+        </div>
+
+        <div class="penthouse-img" data-aos="fade-up">
+          <img src="assets/Images/penthouse.png" />
+        </div>
       </div>
     </div>
     <!-- Box Resume -->
     <div class="border-grey">
-      <div class="resume">
+      <div class="resume" data-aos="fade-up">
         <h2 id="resume-scroll"><span class="degrader-gold">Résumé</span></h2>
 
         <p>
@@ -62,7 +71,7 @@
     </div>
 
     <!-- BOX Personnages -->
-    <div class="perso">
+    <div class="perso" data-aos="fade-up">
       <h2 id="perso-scroll">
         <span class="degrader-gold">Personnages principaux</span>
       </h2>
@@ -144,7 +153,7 @@
         </div>
       </div>
 
-      <div class="perso-container-bas">
+      <div class="perso-container-bas" data-aos="fade-up">
         <div class="personnage-carte">
           <p class="nom-perso">
             <a
@@ -195,7 +204,7 @@
     </div>
 
     <!-- Ajoutez des target  blank pour chaque lien afin de faciliter la navigation de la page  -->
-    <div class="membres-cles">
+    <div class="membres-cles" data-aos="fade-up">
       <p>
         <span class="degrader-gold">
           Autres membres clés :
@@ -232,9 +241,11 @@
     </div>
     <!-- Box Saisons -->
 
-    <main class="seasons-container">
+    <main class="seasons-container" data-aos="fade-up">
       <h2 id="saison-scroll">
-        <span class="degrader-gold">Chronologie Des Saisons</span>
+        <span class="degrader-gold"
+          >Chronologie Des Saisons(test pour éviter spoils)</span
+        >
       </h2>
       <article class="season-card border-yellow">
         <div class="season-thumbnail">
@@ -264,13 +275,14 @@
 
     <footer>
       <div class="fin-page">
-        <h4><span class="degrader-blanc-footer">B1 - Coding Factory</span></h4>
-        <h4>
-          <span class="degrader-blanc-footer">2025 - Site Crée Par Nolan </span>
-        </h4>
+        <h4>B1 - Coding Factory</h4>
+        <h4>2025 - Site Crée Par Nolan</h4>
       </div>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="assets/js/penthouse.js"></script>
   </body>
 </html>

@@ -392,25 +392,119 @@ header ul a li {
 
 /* Box saisons  */
 
-/* Ajt une border a gauche pour chaque saison en doré et le reste est arrondi
-utiliser le code de la page titans pour s'aider */
-.saisons h2 {
+.seasons-container {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.seasons-container h2 {
+  margin-top: -5%;
   text-align: center;
-  margin-bottom: 5%;
-  color: gold;
-  font-size: 30px;
+  font-size: 40px;
   font-family: "Cinzel", serif;
   font-weight: 700;
   font-style: oblique;
-  text-decoration: underline; /* permet de souligné du texte*/
+  margin-bottom: 5%;
 }
 
-.saisons-container {
-  margin-top: 5%;
+/* CSS de la partie labday */
+
+.page-title {
+  margin-top: 10%;
+  font-family: "Poppins", sans-serif;
+
+  font-weight: 900;
+  font-size: 3.5rem;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 100px;
+
+  border-bottom: 1px solid rgba(85, 85, 85, 0.489);
+}
+
+.season-card {
+  background: radial-gradient(circle at center, #242424 0%, #000000 100%);
+  border-radius: 6px;
+  margin-bottom: 25px;
+  padding: 30px;
   display: flex;
   align-items: center;
+  gap: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-left-width: 5px;
+  border-left-style: solid;
+}
+
+/* --- BORDURES COLORÉES --- */
+
+.border-yellow {
+  display: flex;
+  align-items: center;
+  border-left-color: #dcb12d;
+}
+
+.season-thumbnail {
+  width: 280px;
+  height: 160px;
+
+  display: flex;
   justify-content: center;
-  flex-direction: column;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.season-thumbnail span {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.season-thumbnail span img {
+  transition: transform 1s ease-out;
+  border-radius: 10px;
+}
+.season-thumbnail span img:hover {
+  display: flex;
+  border-radius: 10px;
+  transform: scale(1.05);
+  /* petit effet doré sur les bordures qd on passe dessus*/
+  box-shadow: 0 0 10px rgb(241, 241, 241);
+}
+/* --- CONTENU TEXTE --- */
+.season-content {
+  flex: 1;
+}
+
+a,
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.season-content h2 {
+  font-family: "Cinzel", serif;
+  font-size: 1.4rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.description {
+  max-width: 290px;
+  color: #aeb4c0;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.highlight {
+  color: #6e7681;
+  font-style: italic;
+  font-size: 0.9rem;
 }
 
 /* FOOTER */

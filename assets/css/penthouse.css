@@ -15,6 +15,30 @@ a {
 
   color: white;
 }
+/* dégradé a utiliser avec un "span" pour mettre du txt */
+
+.degrader-gold {
+  background: linear-gradient(to right, gold, #7d6f00);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.degrader-blanc {
+  background: linear-gradient(to right, #ffffff, #5b5b5b);
+
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.degrader-blanc-footer {
+  background: linear-gradient(to right, #ffffff, #8d8d8d);
+
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 body {
   background-color: black;
@@ -27,25 +51,32 @@ body {
   margin: 0;
 }
 
-/* HEADER */
+/*                     HEADER             */
 header {
-  border-top: 1px solid rgba(41, 41, 41, 0.489);
+  box-sizing: border-box; /* permet de ne pas depasser les 100%
+  /* pr que le header reste en haut */
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  height: 80px;
+  width: 100%; /* mettre une taille fixe au header sinon il sera coupé */
   display: flex;
   justify-content: space-between; /* espace entre le titre et le menu */
   align-items: center; /* centre verticalement */
+  padding: 10px 40px;
   background: linear-gradient(rgb(241, 184, 51), rgb(0, 0, 0));
-  padding: 10px 30px;
-}
 
+  border-top: 1px solid rgba(41, 41, 41, 0.489);
+}
 header img {
   border-radius: 10px;
 }
 
 /* Liste de navigation à droite */
 ul {
-  list-style: none; /* enlève les puces */
+  list-style: none;
   display: flex;
-  gap: 50px; /* espace entre les éléments */
+  gap: 50px;
   margin: 0;
   padding: 0;
 }
@@ -211,8 +242,8 @@ h2 {
 }
 
 .personnages-container {
-  display: flex; /* Active Flexbox */
-  justify-content: center; /* Commence l'alignement à gauche */
+  display: flex;
+  justify-content: center;
 
   gap: 110px;
   margin-top: 1%;
@@ -225,9 +256,8 @@ h2 {
 }
 
 .personnage-carte:hover img {
-  /* Petit zoom */
+  /* ptit effet de zoom */
   transform: scale(1.02);
-  /* petit effet doré sur les bordures qd on passe dessus*/
   box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
 }
 
@@ -239,8 +269,8 @@ h2 {
 
 .personnage-carte {
   display: flex;
-  flex-direction: column; /* Empile le nom et l'image verticalement */
-  align-items: center; /* Centre les éléments horizontalement */
+  flex-direction: column;
+  align-items: center;
 }
 
 .nom-perso {
@@ -264,39 +294,10 @@ h2 {
   transition: 1s;
 }
 
-/* qd je passe sur le prenom des prsng et leur description ca passe en jaune */
-.personnage-carte p:hover {
-  color: gold;
-  transition: 1s;
-}
-
 .personnage-carte img {
   border: 3px solid rgba(41, 41, 41, 0.489);
   border-radius: 16px;
   border-bottom: 10px solid rgba(41, 41, 41, 0.489);
-}
-
-.degrader-gold {
-  background: linear-gradient(to right, gold, #7d6f00);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.degrader-blanc {
-  background: linear-gradient(to right, #ffffff, #5b5b5b);
-
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.degrader-blanc-footer {
-  background: linear-gradient(to right, #ffffff, #8d8d8d);
-
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .description-perso {
@@ -512,7 +513,7 @@ h2 {
   border-radius: 10px;
   transform: scale(1.02);
   /* petit effet doré sur les bordures qd on passe dessus*/
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 0px rgba(255, 255, 255, 0.5);
 }
 /* --- CONTENU TEXTE --- */
 .season-content {

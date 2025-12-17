@@ -137,6 +137,7 @@ h2 {
   margin-bottom: 5%;
 }
 .resume h2 {
+  margin-left: 5%;
   letter-spacing: 2px;
   margin-left: -1250px;
   font-size: 40px;
@@ -455,22 +456,18 @@ h2 {
 .border-yellow {
   display: flex;
   align-items: center;
-  border: 5px solid;
-  border-image: linear-gradient(
-      to right,
-      #000000,
-      #686101,
-      #b38728,
-      #b9ac01,
-      #000000
-    )
-    1;
-  border-radius: 10px;
+  border: 5px solid transparent;
+  border-radius: 15px;
+
+  /* supperposition de 2 gradient pr permettre l'arrondi */
+  background: linear-gradient(black, black) padding-box,
+    linear-gradient(to right, #7c7801, #7c7801, #2a2f00, #1c2000, #000000)
+      border-box;
 }
 
 .season-thumbnail {
   width: 280px;
-  height: 160px;
+  height: 250px;
 
   display: flex;
   justify-content: center;
@@ -493,6 +490,7 @@ h2 {
       #000000
     )
     1;
+
   border-radius: 10px;
 }
 
@@ -514,7 +512,7 @@ h2 {
   border-radius: 10px;
   transform: scale(1.02);
   /* petit effet doré sur les bordures qd on passe dessus*/
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
 /* --- CONTENU TEXTE --- */
 .season-content {

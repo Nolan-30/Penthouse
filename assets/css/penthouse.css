@@ -410,6 +410,7 @@ h2 {
   max-width: 70%;
   margin: 0 auto;
   padding: 60px 20px;
+  margin-top: -5%;
 }
 
 .seasons-container h2 {
@@ -541,7 +542,9 @@ li {
 
 .description {
   text-align: center;
-  max-width: 290px;
+
+  min-width: 300px;
+  max-width: 300px;
   color: #aeb4c0;
   font-size: 1rem;
   margin-bottom: 15px;

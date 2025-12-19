@@ -179,29 +179,36 @@ h2 {
 
 /* BOX RESUME */
 
-.resume {
-  display: flex;
-  flex-direction: column;
-  margin-top: 2%;
+#resume-scroll {
+  margin-top: 5%;
   margin-bottom: 5%;
-  margin-left: 5%;
-}
-.resume h2 {
   text-align: center;
   letter-spacing: 2px;
-
   font-size: 40px;
   font-family: "Cinzel", serif;
   font-weight: 700;
-  margin-bottom: 10%;
 }
-.resume p {
+
+.resume-container {
+  display: flex;
+  margin-bottom: 5%;
+  justify-content: center;
+
+  gap: 50px;
+}
+
+.box-resume {
+  flex-direction: column;
+  max-width: 600px;
+}
+
+.box-resume p {
   min-width: 600px;
   max-width: 600px;
   font-size: 20px;
 }
 
-.resume h3 {
+.box-resume h3 {
   color: gold;
   /*  STYLE*/
   font-style: italic;
@@ -209,21 +216,22 @@ h2 {
   font-weight: 700; /* Poids léger pour l'élégance */
 }
 
-.resume a {
+.box-resume a {
   color: gold;
   text-decoration: none;
 }
 
-.resume a:hover {
+.box-resume a:hover {
   color: rgb(255, 255, 255);
   transition: 1s;
 }
 
-/* placement de l'image */
+/* placement de l'image 
 .img-seol-a {
   margin-left: 60%;
-  margin-top: -200px;
+  margin-top: -270px;
 }
+  */
 
 .img-seol-a img {
   border-radius: 10px;
@@ -244,6 +252,7 @@ h2 {
   /* petit effet doré sur les bordures qd on passe dessus*/
   box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
 }
+
 /*                      */
 /* box des personnages*/
 /*                  */

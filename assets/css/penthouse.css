@@ -395,8 +395,6 @@ h2 {
   margin-bottom: 5%;
 }
 
-/* CSS de la partie labday */
-
 .page-title {
   margin-top: 10%;
   font-family: "Poppins", sans-serif;
@@ -585,7 +583,7 @@ footer {
   }
 
   .img-seol-a {
-    margin-top: -25%; /* pr reduire le gap */
+    margin-top: -35%; /* pr reduire le gap */
     display: flex;
     justify-content: center;
   }
@@ -597,6 +595,11 @@ footer {
   .personnage-carte,
   .perso-container-bas {
     flex-direction: column; /* on empile les cartes sur mobile */
+    gap: 10px;
+  }
+  .description-perso p {
+    border: 3px solid rgba(54, 54, 54, 0.489); /* ptit changement de couleur de bordure prsk on ne les voit plus tres bien avec le dégradé appliqué au BG */
+    border-top: 0;
   }
 }
 

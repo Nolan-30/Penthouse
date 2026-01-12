@@ -146,7 +146,7 @@ h2 {
   text-align: center;
   font-style: italic;
   font-family: "Lato", sans-serif;
-  font-weight: 700; /* Poids léger pour l'élégance */
+  font-weight: 700;
 }
 
 .presentation a h2 {
@@ -232,13 +232,6 @@ h2 {
   color: rgb(255, 255, 255);
   transition: 1s;
 }
-
-/* placement de l'image 
-.img-seol-a {
-  margin-left: 60%;
-  margin-top: -270px;
-}
-  */
 
 .img-seol-a img {
   border-radius: 10px;
@@ -371,7 +364,7 @@ h2 {
   text-align: center;
   font-size: 20px;
   font-family: "Playfair Display", serif;
-  font-weight: 700; /* Poids gras pour les titres */
+  font-weight: 700;
   margin-bottom: 5%;
 }
 
@@ -575,7 +568,7 @@ footer {
   .box-resume p,
   h3,
   a {
-    /* 1. On supple la min-width de 600px qui etait definit plus haut */
+    /* 1. On suppr la min-width de 600px qui etait definit plus haut */
     min-width: 0;
     max-width: 450px;
 

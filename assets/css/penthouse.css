@@ -676,6 +676,7 @@ footer {
   .membres-cles .degrader-gold {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .membres-cles .oblic a {
@@ -685,6 +686,11 @@ footer {
 
     max-width: 150px;
     margin: 10px;
+  }
+
+  /* on enleve le trait jaune sur la partie mobile */
+  .membres-cles p::after {
+    display: none; /* Désactive le trait sur mobile pour éviter le bug de décalage */
   }
 }
 

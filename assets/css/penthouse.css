@@ -24,22 +24,6 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
-.degrader-blanc {
-  background: linear-gradient(to right, #ffffff, #5b5b5b);
-
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.degrader-blanc-footer {
-  background: linear-gradient(to right, #ffffff, #8d8d8d);
-
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .border-grey {
   border-top: 1px solid rgba(132, 132, 132, 0.489);
   border-bottom: 1px solid rgba(132, 132, 132, 0.489);
@@ -740,11 +724,6 @@ footer {
 
     max-width: 150px;
     margin: 10px;
-  }
-
-  /* on enleve le trait jaune sur la partie mobile */
-  .membres-cles p::after {
-    display: none;
   }
 }
 

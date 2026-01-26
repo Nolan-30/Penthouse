@@ -55,7 +55,7 @@ header {
   padding: 10px 40px;
   background: radial-gradient(circle at center, #3a3300 0%, #000000 100%);
 
-  border-image: linear-gradient(to right, #000000, #b38728, #000000) 1;
+  border-image: linear-gradient(to right, #000000, #fff700, #000000) 1;
   border-bottom: 1px solid rgb(41, 41, 41);
 }
 
@@ -80,7 +80,7 @@ header ul a li::after {
   height: 2px; /* hauteur du surlignement */
   bottom: 0;
   left: 0;
-  background-color: gold;
+  background: radial-gradient(circle at center, #ffee03 0%, #000000 100%);
   transition: width 1s ease; /* largeur de l'animation de la ligne */
 }
 
@@ -117,18 +117,12 @@ h2 {
   font-weight: 700;
 }
 
-.presentation a h2 {
-  text-decoration: none;
-  color: gold;
-}
-
 .presentation h2 {
   color: gold;
 }
 
 .presentation span h2 {
   margin-top: 150px;
-  color: gold;
 }
 
 .penthouse-pic {
@@ -563,7 +557,7 @@ h2 {
   height: 2px; /* hauteur du surlignement */
   bottom: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.5);
+  background: radial-gradient(circle at center, #b38728 0%, #000000 100%);
   transition: width 1s ease; /* largeur de l'animation de la ligne */
 }
 
@@ -618,6 +612,12 @@ footer {
 }
 
 .fin-page h4 {
+  position: relative;
+
+  padding-bottom: 5px; /* le surlignement sera legerement un peu + en dessous */
+}
+
+.fin-page h4 {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -628,7 +628,24 @@ footer {
   line-height: 1.2; /* ou 1.3 */
 }
 
-/****    Responsive   ***/
+.fin-page h4::after {
+  content: ""; /* permet un ptit surlignement au survol de la list*/
+  position: absolute; /* definition d'une position fixe pr que le surlignement bouge jms */
+  width: 0;
+  height: 2px; /* hauteur du surlignement */
+  bottom: 0;
+  left: 0;
+  background: radial-gradient(circle at center, #ffee03 0%, #000000 100%);
+  transition: width 1s ease; /* largeur de l'animation de la ligne */
+}
+
+.fin-page h4 :hover::after {
+  width: 100%; /* pr que le surlignement prenne tt la largeur de chaque au moment du survol */
+}
+
+/****   REPONSIVE  ***/
+/****   REPONSIVE  ***/
+/****   REPONSIVE  ***/
 
 /* Partie Header */
 @media (max-width: 768px) {
@@ -685,6 +702,9 @@ footer {
 
   .box-resume .click:hover::after {
     width: 95%; /* pr que le surlignement prenne tt la largeur de chaque au moment du survol */
+  }
+  .box-resume a {
+    margin-top: 5%;
   }
 }
 

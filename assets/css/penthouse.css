@@ -118,11 +118,28 @@ h2 {
 }
 
 .presentation h2 {
-  color: gold;
+  /* degrader gold */
+  background: linear-gradient(to right, gold, #7d6f00);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .presentation span h2 {
-  margin-top: 150px;
+  margin-top: 150px; /* pr separer les 2 txt */
+  /* degrader gold */
+  background: linear-gradient(to right, gold, #7d6f00);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* SURLIGNEMENT */
+
+.presentation a {
+  position: relative;
+
+  padding-bottom: 5px; /* le surlignement sera legerement un peu + en dessous */
 }
 
 .penthouse-pic {
@@ -306,7 +323,7 @@ h2 {
   bottom: 0;
   left: 0;
   background-color: rgb(255, 215, 0, 0.5);
-  transition: width 1s ease; /* largeur de l'animation de la ligne */
+  transition: width 2s ease; /* largeur de l'animation de la ligne */
 }
 
 .nom-perso a:hover::after {
@@ -512,7 +529,7 @@ h2 {
   height: 150px;
   margin-left: 10%;
   border: 1px solid;
-  border-image: linear-gradient(to right, #000000, #b38728, #000000) 1;
+  border-image: linear-gradient(to bottom, #000000, #b38728, #000000) 1;
 
   border-radius: 10px;
 }

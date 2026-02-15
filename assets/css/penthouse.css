@@ -4,10 +4,21 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
+
+
 * {
   scroll-behavior: smooth;
 }
 
+/*******************************************************/
+/***************** propriete par defaut *****************/
+/*******************************************************/
+
+/* empeche el flottement de l'image si maintenu */
+img{
+  user-select:none;
+  -webkit-user-drag :none ;
+}
 
 li,
 a {
@@ -17,6 +28,7 @@ a {
   /* chaque txt sera en blanc par defaut sauf pr les elements importants */
   color: white;
 }
+
 /* dégradé a utiliser avec un "span" pour mettre du txt */
 
 .degrader-gold {
@@ -56,19 +68,21 @@ header {
   justify-content: space-between; /* espace entre le titre et le menu */
   align-items: center; /* centre verticalement */
   padding: 10px 40px;
+  
   background: radial-gradient(circle at center, #3a3300 0%, #000000 100%);
-
+  background-color: rgb(255, 215, 0, 0.5);
   border-image: linear-gradient(to right, #000000, #fff700, #000000) 1;
   border-bottom: 1px solid rgb(41, 41, 41);
 }
 
 header img {
   transition: transform 2s ease-out;
-  border-radius: 10px;
+
 }
 header img:hover {
   transform: scale(1.1);
 }
+
 
 header ul a li {
   position: relative;
@@ -83,7 +97,8 @@ header ul a li::after {
   height: 2px; /* hauteur du surlignement */
   bottom: 0;
   left: 0;
-  background: radial-gradient(circle at center, #ffee03 0%, #000000 100%);
+  background: radial-gradient(circle at center, #ffee03 0%, #000000 100%); 
+
   transition: width 1s ease; /* largeur de l'animation de la ligne */
 }
 
@@ -106,7 +121,16 @@ header ul a li {
   font-size: 20px;
 }
 
-/*** PENTHOUSE PARTIE ***/
+/*******************************************/
+/*****************   Fin   **************/
+/*******************************************/
+
+
+
+
+/*********************************************/
+/*************** PENTHOUSE PARTIE ***********/
+/*******************************************/
 
 .presentation {
   padding: 20px;
@@ -145,7 +169,6 @@ h2 {
   height: 2px; /* hauteur du surlignement */
   bottom: 0;
   left: 565px; /* on deplace le surlignement pour qu'il commence au debut du txt */
-
   background: radial-gradient(circle at center, #ffee03 0%, #000000 100%);
   transition: width 1s ease; /* largeur de l'animation de la ligne */
 }
@@ -153,18 +176,6 @@ h2 {
 .presentation h2:first-child:hover::after {
   width: 25%; /
 }
-
-/* TEST POUR LA PARTIE PRESENTATION */
-
-.test-presentation h2 {
-  /* degrader gold pr le texte "le luxe...." */
-  background: linear-gradient(to right, gold, #7d6f00);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* SURLIGNEMENT */
 
 .presentation a span h2 {
   position: relative;
@@ -182,7 +193,10 @@ h2 {
   border-radius: 10px;
   border: 3px solid rgba(41, 41, 41, 0.489);
   margin-bottom: 10%;
-
+    background:
+    linear-gradient(black, black) padding-box,
+    linear-gradient(to right, #7c7801, #7c7801, #2a2f00, #1c2000, #121212)
+      border-box;
   transition: transform 1s ease-out;
 }
 
@@ -193,7 +207,14 @@ h2 {
   box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
 }
 
-/* BOX RESUME */
+/*********************************************/
+/******************      FIN      ***********/
+/*******************************************/
+
+
+/*********************************************/
+/**************** PARTIE RESUME *************/
+/******************************7************/
 
 #resume-scroll {
   margin-top: 5%;
@@ -258,7 +279,7 @@ h2 {
 }
 
 .box-resume .click::after {
-  content: ""; /* permet un ptit surlignement au survol de la list*/
+  content: ""; 
   position: absolute; /* definition d'une position fixe pr que le surlignement ne bouge jms */
   width: 0;
   height: 2px; /* hauteur du surlignement */
@@ -269,21 +290,21 @@ h2 {
 }
 
 .box-resume .click:hover::after {
-  width: 42%; /* pr que le surlignement prenne tt la largeur de chaque au moment du survol */
+  width: 42%; 
 }
 
 .img-seol-a img {
-  border-radius: 10px;
-  border: 3px solid rgba(41, 41, 41, 0.489);
-}
-
-.img-seol-a img {
-  border-radius: 10px;
-  border: 3px solid rgba(41, 41, 41, 0.489);
   margin-bottom: 10%;
-
-  transition: transform 3s ease-out;
+  transition: transform 2s ease-out;
+  border-radius: 10px;
+  border: 3px solid rgba(41, 41, 41, 0.489);
+  background:
+    linear-gradient(black, black) padding-box,
+    linear-gradient(to right, #7c7801, #7c7801, #2a2f00, #1c2000, #121212)
+      border-box;
 }
+
+
 
 .img-seol-a:hover img {
   /* Petit zoom */
@@ -301,10 +322,11 @@ h2 {
   letter-spacing: 2px;
   margin-bottom: 5%;
   margin-top: 5%;
-  color: gold;
+  
   font-size: 40px;
   font-family: "Cinzel", serif;
   font-weight: 700;
+
 }
 
 .personnages-container {
@@ -318,6 +340,10 @@ h2 {
 }
 /* ajt d'effet de zoom qd je passe sur une image */
 .perso-pic img {
+      background:
+    linear-gradient(black, black) padding-box,
+    linear-gradient(to right, #7c7801, #7c7801, #2a2f00, #1c2000, #121212)
+      border-box;
   transition: transform 1s ease-out;
 }
 
@@ -355,8 +381,9 @@ h2 {
   height: 2px; /* hauteur du surlignement */
   bottom: 0;
   left: 0;
-  background-color: rgb(255, 215, 0, 0.5);
+  background: radial-gradient(circle at center, #ffee03 0%, #000000 100%); 
   transition: width 1s ease; /* largeur de l'animation de la ligne */
+  /* background-color: rgb(255, 215, 0, 0.5); */
 }
 
 .nom-perso a:hover::after {
@@ -382,7 +409,10 @@ h2 {
 .personnage-carte img {
   border: 3px solid rgba(41, 41, 41, 0.489);
   border-radius: 16px;
-  border-bottom: 10px solid rgba(41, 41, 41, 0.489);
+  
+
+
+  /*border-bottom: 10px solid rgba(41, 41, 41, 0.489);*/
 }
 
 .description-perso {
@@ -391,12 +421,13 @@ h2 {
 }
 
 .description-perso p {
-  /* couleur */
-  border: 3px solid rgba(41, 41, 41, 0.489);
-  border-radius: 10px;
-  border-top: 0;
-  color: rgb(255, 255, 255);
 
+  /*border: 3px solid rgba(41, 41, 41, 0.489);*/
+  border-top: 0;
+
+  border-radius: 10px;
+
+  color: rgb(255, 255, 255);
   margin: 0;
   margin-bottom: 15%; /* laisse de l'espace pour mettre la border qui delimite les grande parties*/
 
@@ -413,16 +444,16 @@ h2 {
 }
 
 .description-perso-seol-a p {
-  /* couleur */
-  border: 3px solid rgba(48, 48, 48, 0.489);
+  /* border */
+  border: 3px solid rgba(48, 48, 48, 0.489); 
   border-radius: 10px;
   border-top: 0;
-  color: rgb(255, 255, 255);
+  
 
   margin: 0;
   margin-bottom: 15%; /* laisse de l'espace pour mettre la border qui delimite les grande parties*/
 
-  /* pr centrer le txt et qu'il prenne tt la place de la box */
+  /* centrer le txt dans la place pr prendre tt la place */
   display: flex;
   text-align: center;
   align-items: center;
@@ -441,40 +472,42 @@ h2 {
   justify-content: center;
   margin-top: 3%;
   border-bottom: 1px solid rgba(132, 132, 132, 0.489);
-  margin-bottom: 5%;
+
 }
 .membres-cles p {
-  color: white;
+  margin-bottom: 5%;
   text-align: center;
+
+  /* style */
   font-size: 20px;
   font-family: "Playfair Display", serif;
   font-weight: 700;
-  margin-bottom: 5%;
+
 }
 
 .membres-cles p {
   position: relative;
-
   padding-bottom: 5px; 
 }
 
-/* test pr mettre un surlignement lorsqu'on passe sur les prenoms des perso comme dans le header */
+
 .membres-cles p::after {
-  content: ""; /* permet un ptit surlignement au survol de la list*/
+  content: ""; 
   position: absolute; /* definition d'une position fixe pr que le surlignement ne bouge jms */
   width: 0;
   height: 2px; /* hauteur du surlignement */
   bottom: 0;
   left: 0;
-  background-color: rgb(255, 215, 0, 0.5);
+  background: radial-gradient(circle at center, #958b00 0%, #000000 100%); 
   transition: width 1s ease; /* largeur de l'animation de la ligne */
 }
 
 .membres-cles p:hover::after {
-  width: 100%; /* pr que le surlignement prenne tt la largeur de chaque au moment du survol */
+  width: 100%; /* pr que le surlignement prenne tt la largeur au moment du survol */
 }
 
 .oblic {
+  /* Style */
   font-style: oblique;
   font-size: 20px;
   text-align: center;
@@ -484,37 +517,28 @@ h2 {
 
 .saisons-container {
   display: flex;
-  flex-direction: column; /* pr empiler les saisons */
+  flex-direction: column; /* empilage de tt les saisons */
+  margin-top: -5%;
   max-width: 70%;
   margin: 0 auto;
   padding: 60px 20px;
-  margin-top: -5%;
+
 }
 
 .saisons-container h2 {
   letter-spacing: 2px;
   text-align: center;
   font-size: 40px;
+  font-family: "Poppins", sans-serif;
+
+  font-weight: 900;
+
   font-family: "Cinzel", serif;
   font-weight: 700;
   font-style: oblique;
   margin-bottom: 5%;
 }
 
-.page-title {
-  margin-top: 10%;
-  font-family: "Poppins", sans-serif;
-
-  font-weight: 900;
-  font-size: 3.5rem;
-  text-align: center;
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 100px;
-
-  border-bottom: 1px solid rgba(85, 85, 85, 0.489);
-}
 
 .saison-carte {
   background: radial-gradient(circle at center, #242424 0%, #000000 100%);
@@ -529,7 +553,7 @@ h2 {
   border-left-style: solid;
 }
 
-/* --- BORDURES COLORÉES --- */
+/* --- BORDURE COLORÉ --- */
 
 .border-yellow {
   display: flex;
@@ -545,9 +569,11 @@ h2 {
 }
 
 .saison-etiquette {
+  /* definition des tailles */
   width: 280px;
   height: 250px;
 
+  /* Centrer horizontalement */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -648,58 +674,66 @@ li {
   font-size: 1rem;
 }
 
-/* FOOTER */
+/*********************   FOOTER  ***************/
+/*********************   FOOTER  ***************/
+/*********************   FOOTER  ***************/
+
 footer {
   padding: 10px;
   margin-top: 5%;
   height: 170px;
   border-top: 1px solid rgb(41, 41, 41);
 
-  /* BG */
+  /* BG footer */
   background: radial-gradient(circle at center, #3a3300 0%, #000000 100%);
-
-  border-image: linear-gradient(to right, #000000, #b38728, #000000) 1;
+  background-color: rgb(255, 215, 0, 0.5);
+  border-image: linear-gradient(to right, #000000, #fff700, #000000) 1;
+  border-bottom: 1px solid rgb(41, 41, 41);
 }
 
 .fin-page h4 {
   position: relative;
 
-  padding-bottom: 5px; /* le surlignement sera legerement un peu + en dessous */
+  padding-bottom: 5px; 
 }
 
 .fin-page h4 {
+  /* centre */
   display: flex;
   justify-content: center;
   text-align: center;
 
+  /* style */
   font-size: 25px;
-
   font-family: "Cinzel", serif;
-  line-height: 1.2; /* ou 1.3 */
+
 }
 
 
 
 .fin-page h4::after {
-  content: ""; /* permet un ptit surlignement au survol de la list*/
+  content: ""; 
   position: absolute; /* definition d'une position fixe pr que le surlignement bouge jms */
   width: 0;
   height: 2px; /* hauteur du surlignement */
   bottom: 0;
   left: 0;
   background: radial-gradient(circle at center, #ffee03 0%, #000000 100%);
-  transition: width 1s ease; /* largeur de l'animation de la ligne */
+  transition: width 1s ease; /* duree de l'animation de la ligne */
 }
 
 .fin-page h4 :hover::after {
   width: 100%; /* pr que le surlignement prenne tt la largeur de chaque au moment du survol */
 }
 
-/****   REPONSIVE  ***/
-/****   REPONSIVE  ***/
-/****   REPONSIVE  ***/
+/*********************   REPONSIVE  ***************/
+/*********************   REPONSIVE  ***************/
+/*********************   REPONSIVE  ***************/
+
+/* refaire les medias query pr les de slargeurs de 320 px 390
 
 /* Partie Header */
+
 @media (max-width: 768px) {
   header {
     justify-content: center;
@@ -716,6 +750,7 @@ footer {
 }
 
 /*  Partie Penthouse  */
+
 @media (max-width: 768px) {
   .penthouse-pic img {
     text-align: center;
@@ -740,6 +775,7 @@ footer {
 }
 
 /*  Partie Resume  */
+
 @media (max-width: 768px) {
   .resume-container {
     flex-direction: column;
@@ -748,10 +784,9 @@ footer {
   .box-resume p,
   h3,
   a {
-    /* 1. On suppr la min-width de 600px qui etait definit plus haut */
+    /* supression de la min-width de 600px qui etait definit plus haut */
     min-width: 0;
     max-width: 450px;
-
     margin: 20px auto;
 
     text-align: center;
@@ -763,14 +798,26 @@ footer {
   }
 
   .img-seol-a {
-    margin-top: -35%; /* pr reduire le gap */
     display: flex;
     justify-content: center;
+    margin-top: -35%; /* pr reduire le gap */
+
   }
 
+  .box-resume .click::after {
+  content: ""; 
+  position: absolute; /* definition d'une position fixe pr que le surlignement ne bouge jms */
+  width: 0;
+  height: 2px; /* hauteur du surlignement */
+  bottom: 0;
+  left: 100px; /* deplacement du surlignement*/
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: width 1s ease; /* duree de l'animation */
+}
+
   .box-resume .click:hover::after {
-    width: 95%; /* pr que le surlignement prenne tt la largeur de chaque au moment du survol */
-  }
+  width: 57%; 
+}
   .box-resume a {
     margin-top: 5%;
   }
@@ -779,10 +826,14 @@ footer {
 /* Partie Perso */
 @media (max-width: 768px) {
   .personnages-container,
-  .personnage-carte,
   .perso-container-bas {
     flex-direction: column; /* on empile les cartes sur mobile */
     gap: 10px;
+
+  }
+
+  .personnage-carte{
+    margin-top: 5%;
   }
   .description-perso p {
     border: 3px solid rgba(54, 54, 54, 0.489); /* ptit changement de couleur de bordure prsk on ne les voit plus tres bien avec le dégradé appliqué au BG */
@@ -806,6 +857,9 @@ footer {
     max-width: 150px;
     margin: 10px;
   }
+  .membres-cles p:hover::after {
+  width: 105%; /* surlignemenent bien aligné en version mobile*/
+}
 }
 
 /* Partie Saison */
@@ -830,3 +884,7 @@ footer {
     margin-left: 5%;
   }
 }
+
+
+
+

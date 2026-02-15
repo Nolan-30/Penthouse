@@ -17,6 +17,9 @@
     <!--------------------     Header      ---------------------->
     <!----------------------------------------------------------->
     <header>
+      <!---------------------------------------------------------->
+      <!--------------------     Navigation      ---------------------->
+      <!----------------------------------------------------------->
       <a class="link" href="#penthouse-scroll"
         ><img src="assets/images/logo.png" height="120" width="auto" />
       </a>
@@ -27,6 +30,9 @@
         <a class="link" href="#saison-scroll"><li>Saisons</li></a>
       </ul>
     </header>
+    <!---------------------------------------------------------------->
+    <!--------------------  Partie Presentation ---------------------->
+    <!---------------------------------------------------------------->
 
     <div class="border-grey">
       <div class="bg-penthouse" id="penthouse-scroll">
@@ -73,8 +79,9 @@
       </div>
     </div>
     <!--------------------------------------------------------------------->
-    <!----------------------        Personnages          ------------------->
-    <!---------------------------------------------------------------------->
+    <!----------------------        PERSONNAGES         ------------------->
+    <!--------------------------------------------------------------------->
+    <!-- utilisation de la biblio de l'animation -->
     <div class="perso" data-aos="fade-up">
       <h2 id="perso-scroll">
         <span class="degrader-gold">Personnages principaux</span>
@@ -94,6 +101,7 @@
             <img
               src="assets/images/seo-jin.jpg"
               height="350"
+              width="250"
               alt="Cheon Seo-Jin"
             />
           </div>
@@ -142,6 +150,7 @@
             <img
               src="assets/images/yoon-hee.jpg"
               height="350"
+              width="250"
               alt="Oh Yoon-Hee"
             />
           </div>
@@ -158,7 +167,6 @@
       <!-------------------------------------------------------------------->
       <div class="perso-container-bas" data-aos="fade-up">
         <div class="personnage-carte">
-          <!-- SUPRESSION DE TOUS LES DEGRADER BLANC DANS LA DESCRIPTION DES PERSONNAGES -->
           <p class="nom-perso">
             <a
               href="https://penthouse-war-in-life.fandom.com/wiki/Joo_Dan_Tae"
@@ -195,7 +203,7 @@
             <img
               src="assets/images/sim-ryjeon.jpg"
               height="350"
-              width="240"
+              width="230"
               alt="Sim Su-Ryeon"
             />
           </div>
@@ -249,9 +257,9 @@
       </p>
     </div>
     <!------------------------------------------------------------------------->
-    <!---------------------------      Saisons      --------------------------->
+    <!---------------------------      SAISONS      --------------------------->
     <!------------------------------------------------------------------------->
-    <main class="saisons-container" data-aos="fade-up">
+    <div class="saisons-container" data-aos="fade-up">
       <h2 id="saison-scroll">
         <div class="degrader-gold">Chronologie Des Saisons</div>
       </h2>
@@ -345,7 +353,7 @@
           </p>
         </div>
       </article>
-    </main>
+    </div>
 
     <!------------------------------------------------------------------------->
     <!---------------------------      Footer      --------------------------->
@@ -357,6 +365,7 @@
         <h4>2026 - Site Crée Par Nolan</h4>
       </div>
     </footer>
+    <!-- Animation -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

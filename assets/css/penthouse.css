@@ -4,8 +4,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
-
-
 * {
   scroll-behavior: smooth;
 }
@@ -15,9 +13,9 @@
 /*******************************************************/
 
 /* empeche el flottement de l'image si maintenu */
-img{
-  user-select:none;
-  -webkit-user-drag :none ;
+img {
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 li,
@@ -45,12 +43,8 @@ a {
 
 body {
   color: white;
-   /* permet de mettre un ptit dégradé a la page complete*/
-  background: radial-gradient(
-    circle at center,
-    #2c2929 0%,
-    #000000 100%
-  );
+  /* permet de mettre un ptit dégradé a la page complete*/
+  background: radial-gradient(circle at center, #2c2929 0%, #000000 100%);
   margin: 0;
 }
 /*******************************************/
@@ -59,7 +53,7 @@ body {
 header {
   box-sizing: border-box; /* permet de ne pas depasser les 100% */
 
-  position: fixed;   /* pr que le header reste en haut */
+  position: fixed; /* pr que le header reste en haut */
   z-index: 1;
   top: 0;
   height: 100px;
@@ -68,7 +62,7 @@ header {
   justify-content: space-between; /* espace entre le titre et le menu */
   align-items: center; /* centre verticalement */
   padding: 10px 40px;
-  
+
   background: radial-gradient(circle at center, #3a3300 0%, #000000 100%);
   background-color: rgb(255, 215, 0, 0.5);
   border-image: linear-gradient(to right, #000000, #fff700, #000000) 1;
@@ -77,12 +71,10 @@ header {
 
 header img {
   transition: transform 2s ease-out;
-
 }
 header img:hover {
   transform: scale(1.1);
 }
-
 
 header ul a li {
   position: relative;
@@ -97,7 +89,7 @@ header ul a li::after {
   height: 2px; /* hauteur du surlignement */
   bottom: 0;
   left: 0;
-  background: radial-gradient(circle at center, #ffee03 0%, #000000 100%); 
+  background: radial-gradient(circle at center, #ffee03 0%, #000000 100%);
 
   transition: width 1s ease; /* largeur de l'animation de la ligne */
 }
@@ -125,9 +117,6 @@ header ul a li {
 /*****************   Fin   **************/
 /*******************************************/
 
-
-
-
 /*********************************************/
 /*************** PENTHOUSE PARTIE ***********/
 /*******************************************/
@@ -154,6 +143,11 @@ h2 {
 /* ajt d'un margin bottom que pr le txt "decouvrir la serie sur netflix*/
 .presentation h2:first-child {
   margin-top: 150px;
+
+  /* pr que le surlignement commence au niveau du txt */
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .presentation h2:first-child {
@@ -166,15 +160,18 @@ h2 {
   content: ""; /* permet un ptit surlignement au survol de la list*/
   position: absolute; /* definition d'une position fixe pr que le surlignement bouge jms */
   width: 0;
-  height: 2px; /* hauteur du surlignement */
+  left: -100px;
+
   bottom: 0;
-  left: 565px; /* on deplace le surlignement pour qu'il commence au debut du txt */
+  height: 2px; /* hauteur du surlignement */
+
   background: radial-gradient(circle at center, #ffee03 0%, #000000 100%);
   transition: width 1s ease; /* largeur de l'animation de la ligne */
 }
 
 .presentation h2:first-child:hover::after {
-  width: 40%; /
+  /* pr que le surlignement commence un peu plus loin du txt */
+  width: 160%;
 }
 
 .presentation a span h2 {
@@ -193,7 +190,7 @@ h2 {
   border-radius: 10px;
   border: 3px solid rgba(41, 41, 41, 0.489);
   margin-bottom: 10%;
-    background:
+  background:
     linear-gradient(black, black) padding-box,
     linear-gradient(to right, #7c7801, #7c7801, #2a2f00, #1c2000, #121212)
       border-box;
@@ -210,7 +207,6 @@ h2 {
 /*********************************************/
 /******************      FIN      ***********/
 /*******************************************/
-
 
 /*********************************************/
 /**************** PARTIE RESUME *************/
@@ -279,7 +275,7 @@ h2 {
 }
 
 .box-resume .click::after {
-  content: ""; 
+  content: "";
   position: absolute; /* definition d'une position fixe pr que le surlignement ne bouge jms */
   width: 0;
   height: 2px; /* hauteur du surlignement */
@@ -290,7 +286,7 @@ h2 {
 }
 
 .box-resume .click:hover::after {
-  width: 42%; 
+  width: 42%;
 }
 
 .img-seol-a img {
@@ -303,8 +299,6 @@ h2 {
     linear-gradient(to right, #7c7801, #7c7801, #2a2f00, #1c2000, #121212)
       border-box;
 }
-
-
 
 .img-seol-a:hover img {
   /* Petit zoom */
@@ -322,11 +316,10 @@ h2 {
   letter-spacing: 2px;
   margin-bottom: 5%;
   margin-top: 5%;
-  
+
   font-size: 40px;
   font-family: "Cinzel", serif;
   font-weight: 700;
-
 }
 
 .personnages-container {
@@ -340,7 +333,7 @@ h2 {
 }
 /* ajt d'effet de zoom qd je passe sur une image */
 .perso-pic img {
-      background:
+  background:
     linear-gradient(black, black) padding-box,
     linear-gradient(to right, #7c7801, #7c7801, #2a2f00, #1c2000, #121212)
       border-box;
@@ -381,7 +374,7 @@ h2 {
   height: 2px; /* hauteur du surlignement */
   bottom: 0;
   left: 0;
-  background: radial-gradient(circle at center, #ffee03 0%, #000000 100%); 
+  background: radial-gradient(circle at center, #ffee03 0%, #000000 100%);
   transition: width 1s ease; /* largeur de l'animation de la ligne */
   /* background-color: rgb(255, 215, 0, 0.5); */
 }
@@ -404,13 +397,9 @@ h2 {
   margin-bottom: 20px;
 }
 
-
-
 .personnage-carte img {
   border: 3px solid rgba(41, 41, 41, 0.489);
   border-radius: 16px;
-  
-
 
   /*border-bottom: 10px solid rgba(41, 41, 41, 0.489);*/
 }
@@ -421,7 +410,6 @@ h2 {
 }
 
 .description-perso p {
-
   /*border: 3px solid rgba(41, 41, 41, 0.489);*/
   border-top: 0;
 
@@ -445,10 +433,9 @@ h2 {
 
 .description-perso-seol-a p {
   /* border */
-  border: 3px solid rgba(48, 48, 48, 0.489); 
+  border: 3px solid rgba(48, 48, 48, 0.489);
   border-radius: 10px;
   border-top: 0;
-  
 
   margin: 0;
   margin-bottom: 15%; /* laisse de l'espace pour mettre la border qui delimite les grande parties*/
@@ -472,7 +459,6 @@ h2 {
   justify-content: center;
   margin-top: 3%;
   border-bottom: 1px solid rgba(132, 132, 132, 0.489);
-
 }
 .membres-cles p {
   margin-bottom: 5%;
@@ -482,23 +468,21 @@ h2 {
   font-size: 20px;
   font-family: "Playfair Display", serif;
   font-weight: 700;
-
 }
 
 .membres-cles p {
   position: relative;
-  padding-bottom: 5px; 
+  padding-bottom: 5px;
 }
 
-
 .membres-cles p::after {
-  content: ""; 
+  content: "";
   position: absolute; /* definition d'une position fixe pr que le surlignement ne bouge jms */
   width: 0;
   height: 2px; /* hauteur du surlignement */
   bottom: 0;
   left: 0;
-  background: radial-gradient(circle at center, #958b00 0%, #000000 100%); 
+  background: radial-gradient(circle at center, #958b00 0%, #000000 100%);
   transition: width 1s ease; /* largeur de l'animation de la ligne */
 }
 
@@ -522,7 +506,6 @@ h2 {
   max-width: 70%;
   margin: 0 auto;
   padding: 60px 20px;
-
 }
 
 .saisons-container h2 {
@@ -538,7 +521,6 @@ h2 {
   font-style: oblique;
   margin-bottom: 5%;
 }
-
 
 .saison-carte {
   background: radial-gradient(circle at center, #242424 0%, #000000 100%);
@@ -600,7 +582,7 @@ h2 {
 
 .saison-etiquette span img {
   transition: transform 2s ease-out;
-  
+
   border-radius: 10px;
   border: 1px solid rgba(85, 85, 85, 0.489);
 }
@@ -609,7 +591,6 @@ h2 {
   border-radius: 10px;
   transform: scale(1.08);
   box-shadow: 0 0 10px rgba(255, 217, 0, 0.5);
-  
 }
 /* --- CONTENU TEXTE --- */
 .saison-content {
@@ -694,7 +675,7 @@ footer {
 .fin-page h4 {
   position: relative;
 
-  padding-bottom: 5px; 
+  padding-bottom: 5px;
 }
 
 .fin-page h4 {
@@ -706,13 +687,10 @@ footer {
   /* style */
   font-size: 25px;
   font-family: "Cinzel", serif;
-
 }
 
-
-
 .fin-page h4::after {
-  content: ""; 
+  content: "";
   position: absolute; /* definition d'une position fixe pr que le surlignement bouge jms */
   width: 0;
   height: 2px; /* hauteur du surlignement */
@@ -758,20 +736,20 @@ footer {
   }
 
   .presentation h2:first-child::after {
-  content: ""; /* permet un ptit surlignement au survol de la list*/
-  position: absolute; /* definition d'une position fixe pr que le surlignement bouge jms */
-  width: 0;
-  height: 2px; /* hauteur du surlignement */
-  bottom: 0;
-  left: 50px; /* on deplace le surlignement pour qu'il commence au debut du txt */
+    content: ""; /* permet un ptit surlignement au survol de la list*/
+    position: absolute; /* definition d'une position fixe pr que le surlignement bouge jms */
+    width: 0;
+    height: 2px; /* hauteur du surlignement */
+    bottom: 0;
+    left: 50px; /* on deplace le surlignement pour qu'il commence au debut du txt */
 
-  background: radial-gradient(circle at center, #ffee03 0%, #000000 100%);
-  transition: width 1s ease; /* largeur de l'animation de la ligne */
-}
+    background: radial-gradient(circle at center, #ffee03 0%, #000000 100%);
+    transition: width 1s ease; /* largeur de l'animation de la ligne */
+  }
 
-.presentation h2:first-child:hover::after {
-  width: 80%; 
-}
+  .presentation h2:first-child:hover::after {
+    width: 80%;
+  }
 }
 
 /*  Partie Resume  */
@@ -801,23 +779,22 @@ footer {
     display: flex;
     justify-content: center;
     margin-top: -35%; /* pr reduire le gap */
-
   }
 
   .box-resume .click::after {
-  content: ""; 
-  position: absolute; /* definition d'une position fixe pr que le surlignement ne bouge jms */
-  width: 0;
-  height: 2px; /* hauteur du surlignement */
-  bottom: 0;
-  left: 100px; /* deplacement du surlignement*/
-  background-color: rgba(255, 255, 255, 0.5);
-  transition: width 1s ease; /* duree de l'animation */
-}
+    content: "";
+    position: absolute; /* definition d'une position fixe pr que le surlignement ne bouge jms */
+    width: 0;
+    height: 2px; /* hauteur du surlignement */
+    bottom: 0;
+    left: 100px; /* deplacement du surlignement*/
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: width 1s ease; /* duree de l'animation */
+  }
 
   .box-resume .click:hover::after {
-  width: 57%; 
-}
+    width: 57%;
+  }
   .box-resume a {
     margin-top: 5%;
   }
@@ -829,10 +806,9 @@ footer {
   .perso-container-bas {
     flex-direction: column; /* on empile les cartes sur mobile */
     gap: 10px;
-
   }
 
-  .personnage-carte{
+  .personnage-carte {
     margin-top: 5%;
   }
   .description-perso p {
@@ -858,8 +834,8 @@ footer {
     margin: 10px;
   }
   .membres-cles p:hover::after {
-  width: 105%; /* surlignemenent bien aligné en version mobile*/
-}
+    width: 105%; /* surlignemenent bien aligné en version mobile*/
+  }
 }
 
 /* Partie Saison */
@@ -884,7 +860,3 @@ footer {
     margin-left: 5%;
   }
 }
-
-
-
-
